@@ -4,11 +4,12 @@
 * Include Styles & Scripts
 */
 
-$uniq = wp_generate_uuid4();
-$current_timestamp = mktime();
-$result_version = $uniq.$current_timestamp;
-
 function print_styles_scripts() {
+
+  $uniq = wp_generate_uuid4();
+  $current_timestamp = time();
+  $result_version = $uniq . $current_timestamp;
+
   if ( 
     is_post_type_archive( array( 'portal', 'partnernews' )) || 
     is_singular( array( 'portal', 'partnernews' )) || 
@@ -30,7 +31,7 @@ function print_styles_scripts() {
       ));
 
   } else {
-
+    
     wp_enqueue_style( 'draim_fancybox', get_template_directory_uri() . '/css/jquery.fancybox.css', array(), $result_version );
     wp_enqueue_style( 'draim_app', get_template_directory_uri() . '/view/app.css', array(), $result_version );
 
