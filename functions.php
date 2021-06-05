@@ -3,6 +3,16 @@ $wp_login_page = ABSPATH.'/wp-login.php';
 require 'lib/post_type.php';
 require 'lib/functions.php';
 
+if ( ! defined( '_S_VERSION' ) ) {
+    // Replace the version number of the theme on each release.
+    define( '_S_VERSION', '1.0.0' );
+}
+
+/**
+ * Enqueue scripts and styles.
+ */
+require get_template_directory() . '/inc/template-assets.php';
+
 //Регистрация миниатюр
 if(function_exists('add_theme_support')){
     add_theme_support('post-thumbnails');
@@ -51,53 +61,6 @@ function svg_upload_allow( $mimes ) {
 	$mimes['svg']  = 'image/svg+xml';
 	return $mimes;
 }
-//Подключение стандартной библиотеки при портале
-function draim_portal_styles_scripts(){
-    if(is_post_type_archive('portal') || is_singular('portal') || is_singular('partnernews') || is_post_type_archive('partnernews') || is_tax('newscategory') || is_page('partnerinfo')){
-        $uniq = wp_generate_uuid4();
-        $current_timestamp = mktime();
-        $result_version = $uniq.$current_timestamp;
-        wp_register_style('draim_style_portal_fancybox',get_template_directory_uri().'/portal/css/jquery.fancybox.css?ver='.$result_version,array(),null);
-        wp_register_style('draim_style_app',get_template_directory_uri().'/view/app.css?ver='.$result_version,array(),null);
-        wp_register_style('draim_style_portal_app',get_template_directory_uri().'/portal/view/app.css?ver='.$result_version,array(),null);
-        wp_register_script('draim_script_jquery','https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js',array(),false,true);
-        wp_register_script('draim_script_migrate','https://code.jquery.com/jquery-migrate-1.4.1.min.js',array(),false,true);
-        wp_register_script('draim_script_app',get_template_directory_uri().'/view/app.js?ver='.$result_version,'draim_script_jquery',null);
-        wp_register_script('draim_script_portal_app',get_template_directory_uri().'/portal/view/app.js?ver='.$result_version,array(),null);
-        wp_enqueue_style('draim_style_portal_fancybox');
-        wp_enqueue_style('draim_style_app');
-        wp_enqueue_style('draim_style_portal_app');
-        wp_enqueue_script('draim_script_jquery');
-        wp_enqueue_script('draim_script_migrate');
-        wp_enqueue_script('draim_script_app');
-        wp_enqueue_script('draim_script_portal_app');
-        wp_localize_script( 'draim_script_portal_app', 'ajaxurl',
-            array(
-                'url' => admin_url('admin-ajax.php')
-            )
-        );
-    }else{
-        $uniq = wp_generate_uuid4();
-        $current_timestamp = mktime();
-        $result_version = $uniq.$current_timestamp;
-        wp_register_style('draim_style_fancybox',get_template_directory_uri().'/css/jquery.fancybox.css?ver='.$result_version,array(),null);
-        //wp_register_style('draim_style_swiper',get_template_directory_uri().'/css/swiper-bundle.css');
-        wp_register_style('draim_style_app',get_template_directory_uri().'/view/app.css?ver='.$result_version,array(),null);
-        wp_register_script('draim_script_jquery','https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
-        wp_register_script('draim_script_app',get_template_directory_uri().'/view/app.js?ver='.$result_version,'draim_script_jquery',null);
-        wp_enqueue_style('draim_style_fancybox');
-        //wp_enqueue_style('draim_style_swiper');
-        wp_enqueue_style('draim_style_app');
-        wp_enqueue_script('draim_script_jquery');
-        wp_enqueue_script('draim_script_app');
-        wp_localize_script( 'draim_script_app', 'ajaxurl',
-            array(
-                'url' => admin_url('admin-ajax.php')
-            )
-        );
-    }
-}
-add_action('wp_enqueue_scripts','draim_portal_styles_scripts');
 
 add_shortcode('news_block','news_block_function');
 
