@@ -1,0 +1,24 @@
+{
+  "name": "everyoneprint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "fancybox": "^3.0.1",
+    "gulp": "^4.0.2",
+    "swiper": "^6.3.4",
+    "wow.js": "^1.2.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anton Goncharov",
+  "license": "ISC"
+}
