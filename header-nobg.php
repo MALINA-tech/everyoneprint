@@ -45,7 +45,7 @@
                         <ul class="header_menu">
                             <?php draim_menu('top_menu');?>
                         </ul>
-                        <a href="<?php the_permalink(8863);?>" class="red_btn btn header_menu_btn">Try for free</a>
+                        <a href="/login?action=hcp-trial" class="red_btn btn header_menu_btn">Try for free</a>
                     </div>
                 </div>
             </div>

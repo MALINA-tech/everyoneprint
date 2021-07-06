@@ -1,5 +1,10 @@
-<?php $back_url = $_SERVER['HTTP_REFERER'];?>
-<?php get_header('nobg');?>
+<?php 
+
+$back_url = $_SERVER['HTTP_REFERER'];
+
+get_header('nobg');
+?>
+
 <section class="page_404">
     <div class="wrapper">
         <div class="block_404">
@@ -13,4 +18,5 @@
         </div>
     </div>
 </section>
-<?php get_footer('nobanner');?>
+
+<?php get_footer();?>

@@ -9629,6 +9629,9 @@ textarea:focus:-ms-input-placeholder {
     color: #4F4F4F; }
     .login-form-container form p {
       margin: 0 0 20px; }
+      .login-form-container form p .btn[disabled] {
+        opacity: .8;
+      }
     .login-form-container form .input_title {
       margin: 0 0 10px;
       color: #2C4251;

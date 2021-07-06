@@ -1,3 +1,11 @@
+
+<?php 
+$page_no_banner = 'footer_nobanner';
+
+if ( ! is_404() && ! is_page( array('careers', 'hcp-demo-request', 'hcp-trial', 'login') )): 
+
+$page_no_banner = '';
+?>
 <section class="promo_section wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
     <div class="wrapper">
         <div class="promo_block">
@@ -6,7 +14,9 @@
         </div>
     </div>
 </section>
-<footer>
+<?php endif ?>
+
+<footer class=" <?= $page_no_banner ?>">
     <div class="wrapper">
         <div class="footer_line">
             <div class="col_3 ib">
@@ -42,5 +52,8 @@
 </footer>
 </div>
 <?php wp_footer();?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/js/utils.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/css/intlTelInput.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/js/intlTelInput.js"></script>
 </body>
 </html>

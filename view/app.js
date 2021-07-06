@@ -15156,7 +15156,6 @@
   return Swiper;
 
 })));
-//# sourceMappingURL=swiper-bundle.js.map
 
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {

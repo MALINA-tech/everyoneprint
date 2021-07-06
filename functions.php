@@ -37,6 +37,11 @@ require get_template_directory() . '/inc/template-taxonomies.php';
 require get_template_directory() . '/inc/template-auth.php';
 
 /**
+ * Add page Admin Members.
+ */
+// require get_template_directory() . '/inc/admin-members.php';
+
+/**
  * Only Admin
  */
 

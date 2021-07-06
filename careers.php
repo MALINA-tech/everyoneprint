@@ -66,4 +66,4 @@ while(have_rows('eop_blocks')) {
     }
 };
 ?>
-<?php get_footer('nobanner');?>
+<?php get_footer();?>

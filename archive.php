@@ -1,6 +1,9 @@
 <?php
-//Template Name: Blog
+
+// Template Name: Blog
+
 get_header();
+
 $hero_image = get_field('blog_image','everyoneprint_options');
 $hero_image_url = $hero_image['url'];
 ?>

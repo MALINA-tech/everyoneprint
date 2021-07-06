@@ -1,0 +1,173 @@
+.auth_alert.auth_alert_error {
+	max-width: 393px;
+	margin: 0 auto 15px;
+	background: linear-gradient(84.97deg, #AC0C11 0%, #DF1E26 100%);
+	color: #fff;
+	padding: 10px;
+	border-radius: 4px;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+	line-height: 130%;
+}
+
+.auth_alert.auth_alert_error a {
+	color: #fff;
+}
+
+.auth_alert.auth_alert_success {
+	max-width: 393px;
+	margin: 0 auto 15px;
+	background: linear-gradient(84.97deg, #1fad0c, #20d539);
+	color: #fff;
+	padding: 10px;
+	border-radius: 4px;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+	line-height: 130%;
+}
+
+.auth_alert.auth_alert_success a {
+	color: #fff;
+}
+
+.pass_wrapper .show_pass {
+	cursor: pointer;
+}
+
+.pass_wrapper input[type="password"].error {
+	border-color: rgb(209, 24, 24) !important;
+	transition: .2s;
+}
+
+.show_password {
+	position: absolute;
+	top: 18px;
+	right: 12px;
+	width: 22px;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.show_password .icon:before {
+	content: '';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+}
+
+.show_password .icon {
+	transition: .1s;
+}
+
+.show_password.hide .icon {
+	color: #a2a2a2;
+}
+
+.show_password.hide .icon:before {
+	content: '\f070';
+}
+
+.show_password.show .icon:before {
+	content: '\f06e';
+}
+
+.input_form:disabled {
+	opacity: .9;
+}
+
+.resend_another {
+	color: #D90F16;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+}
+
+input[type="submit"]:disabled {
+	cursor: default;
+}
+
+.single_webinar_body #webinar_form .cf_check_half {
+	width: 100%;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cf_check_items label {
+	width: 48%;
+}
+
+.contact_form_block .cf_check_items .cf_check span.cf_check_btn {
+	margin: 0 0 10px;
+}
+
+.contact_form_block .cf_check_items .cf_check input[type="radio"] {
+	display: none;
+}
+
+.contact_form_block .cf_check_items .cf_check span.cf_check_btn.active:after {
+	display: inline-block !important;
+	transition: .2s;
+}
+
+.contact_form_block .cf_check_items .cf_check span.cf_check_btn.active {
+	background: rgba(217, 15, 22, 0.1);
+}
+
+.contact_form_block .cf_check_items .cf_check span.cf_check_btn.active {
+	background: rgba(217, 15, 22, 0.1);
+}
+
+.contact_form_block .cf_check_items .cf_check span.active {
+	color: #D90F16;
+}
+
+.after_submit_block .btn {
+	width: auto;
+}
+
+#password-change-repeat {
+	display: none;
+	width: 100%;
+	max-width: 393px;
+	margin: 0 auto 15px;
+	background: linear-gradient(84.97deg, #AC0C11 0%, #DF1E26 100%);
+	color: #fff;
+	padding: 10px;
+	border-radius: 4px;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+	line-height: 130%;
+}
+
+#resetpassform #resetpass-button {
+	display: block;
+}
+
+#wp-submit:disabled {
+	opacity: .8;
+	transition: .2s;
+}
+
+.form-send-btn {
+	outline: none;
+	border: none;
+	width: 100%;
+	height: 50px;
+	font-size: 18px;
+}
+
+.menu-item-has-children > a:before {
+	content: '\f078';
+	font-family: 'Font Awesome 5 Free';
+	position: absolute;
+	right: -12px;
+	top: 9px;
+	color: #595959;
+	font-size: 9px;
+}
+
+.menu-item-has-children > a.active:before {
+	transform: rotate(180deg);
+}

@@ -34,4 +34,4 @@ get_header('forms');?>
     </div>
 </section>
 
-<?php get_footer('nobanner');?>
+<?php get_footer();?>

@@ -19,29 +19,36 @@ function print_styles_scripts() {
     wp_enqueue_style( 'draim_fancybox', get_template_directory_uri() . '/portal/css/jquery.fancybox.css', array(), $result_version );
     wp_enqueue_style( 'draim_app', get_template_directory_uri() . '/view/app.css', array(), $result_version );
     wp_enqueue_style( 'draim_portal_app', get_template_directory_uri() . '/portal/view/app.css', array(), $result_version );
+    wp_enqueue_style( 'draim_main', get_template_directory_uri() . '/assets/css/main.css', array(), $result_version );
 
     wp_enqueue_script( 'draim_jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), '3.6.0', true );
     wp_enqueue_script( 'draim_jmigrate', '//code.jquery.com/jquery-migrate-1.4.1.min.js', array(), '1.4.1', true );
     wp_enqueue_script( 'draim_app', get_template_directory_uri() . '/view/app.js', array(), $result_version, true );
-    wp_enqueue_script( 'draim_portal_app', get_template_directory_uri() . '/portal/view/app.js', array(), $result_version, true );
+    wp_enqueue_script( 'draim_country', get_template_directory_uri() . '/assets/js/countrySelect.js', array(), $result_version, true );
+    wp_enqueue_script( 'draim_ajax', get_template_directory_uri() . '/assets/js/ajax-auth.js', array(), $result_version, true );
+    wp_enqueue_script( 'draim_main', get_template_directory_uri() . '/assets/js/main.js', array(), $result_version, true );
+    // wp_enqueue_script( 'draim_portal_app', get_template_directory_uri() . '/portal/view/app.js', array(), $result_version, true );
 
-    wp_localize_script( 'draim_script_portal_app', 'ajaxurl',
-      array(
-        'url' => admin_url('admin-ajax.php')
-      ));
+    // wp_localize_script( 'draim_script_portal_app', 'ajaxurl',
+    //   array(
+    //     'url' => admin_url('admin-ajax.php')
+    //   ));
 
   } else {
     
     wp_enqueue_style( 'draim_fancybox', get_template_directory_uri() . '/css/jquery.fancybox.css', array(), $result_version );
     wp_enqueue_style( 'draim_app', get_template_directory_uri() . '/view/app.css', array(), $result_version );
+    wp_enqueue_style( 'draim_main', get_template_directory_uri() . '/assets/css/main.css', array(), $result_version );
 
     wp_enqueue_script( 'draim_jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), '3.6.0', true );
-    wp_enqueue_script( 'draim_app', get_template_directory_uri() . '/view/app.js', array(), $result_version, true );
+    wp_enqueue_script( 'draim_country', get_template_directory_uri() . '/assets/js/countrySelect.js', array(), $result_version, true );
+    wp_enqueue_script( 'draim_inptel', get_template_directory_uri() . '/assets/js/intl-tel-input/js/intlTelInput.js', array(), $result_version, true );
+    wp_enqueue_script( 'draim_main', get_template_directory_uri() . '/assets/js/main.js', array(), $result_version, true );
 
-    wp_localize_script( 'draim_script_app', 'ajaxurl',
-    array(
-      'url' => admin_url('admin-ajax.php')
-    ));
+    // wp_localize_script( 'draim_script_app', 'ajaxurl',
+    // array(
+    //   'url' => admin_url('admin-ajax.php')
+    // ));
 
   }
 }

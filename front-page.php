@@ -3,6 +3,7 @@
 Template Name: Main Page
 */
 get_header();?>
+
 <?php
     while(have_rows('eop_blocks')) {
         the_row();
@@ -35,5 +36,5 @@ get_header();?>
         }
     };
 ?>
-<?php //echo do_shortcode('[other_updates show_need="true"]');?>
+
 <?php get_footer();?>
