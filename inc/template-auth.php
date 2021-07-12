@@ -8,10 +8,6 @@ if (!current_user_can('administrator')) {
   show_admin_bar( false );
 }
 
-function redirectToLogin() {
-  header( 'Location: ' . wp_login_url() );
-}
-
 /**
  * Отключить стандартные Email авторизации
  */
