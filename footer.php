@@ -10,7 +10,7 @@ $page_no_banner = '';
     <div class="wrapper">
         <div class="promo_block">
             <div class="promo_title">Ready to get started?</div>
-            <a href="<?php the_permalink(8863);?>" class="btn red_btn">Try for free</a>
+            <a href="/login/?action=hcp-trial" class="btn red_btn">Try for free</a>
         </div>
     </div>
 </section>

@@ -29,7 +29,7 @@ if( function_exists( 'acf_add_options_page' )) {
 		'menu_slug' 	=> 'everyoneprint-settings',
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false,
-		'icon_url' 		=> get_template_directory_uri() . '/images/menu_settings_icon.png'
+		'icon_url' 		=> get_template_directory_uri() . '/assets/img/menu_settings_icon.png'
 	));
 }
 

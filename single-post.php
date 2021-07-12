@@ -154,7 +154,7 @@ while(have_rows('eop_blocks')) {
         get_template_part('inc/eop_blocks/map');
     }
 };
-if(!is_user_logged_in()){
+if( !is_user_logged_in() ){
 	?>
 	<style>
 		.sticky-content.fixed{

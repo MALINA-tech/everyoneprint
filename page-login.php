@@ -7,6 +7,9 @@
 
 get_header('forms');
 
+$get_uri_login = '';
+$get_uri_check = '';
+
 $get_uri_login = $_GET['action'];
 $get_uri_check = $_GET['checkemail'];
 

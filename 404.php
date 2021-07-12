@@ -2,7 +2,7 @@
 
 $back_url = $_SERVER['HTTP_REFERER'];
 
-get_header('nobg');
+get_header();
 ?>
 
 <section class="page_404">

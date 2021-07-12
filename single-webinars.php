@@ -1,4 +1,4 @@
-<?php get_header('nobg');?>
+<?php get_header();?>
 <section class="single_webinar_title">
     <h2>Register for <span>Webinar</span></h2>
     <div class="single_webinar_description">
@@ -49,4 +49,4 @@
     </div>
 </section>
 
-<?php get_footer('nobanner');?>
+<?php get_footer();?>

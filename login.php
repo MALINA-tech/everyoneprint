@@ -55,4 +55,4 @@ get_header('forms');?>
     }
     ?>
 </div>
-<?php get_footer();?>
+<?php get_footer('nobanner');?>

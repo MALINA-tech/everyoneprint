@@ -38,7 +38,7 @@ function add_draim_post_type(){
     'has_archive'         => true,
     'hierarchical'        => false,
     'menu_position'       => null,
-    'menu_icon'           => get_template_directory_uri() . '/images/menu_products_icon.png',
+    'menu_icon'           => get_template_directory_uri() . '/assets/img/menu_products_icon.png',
     'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'page-attributes' )
   );
 
@@ -76,7 +76,7 @@ function add_draim_post_type(){
     'has_archive'         => true,
     'hierarchical'        => false,
     'menu_position'       => null,
-    'menu_icon'           => get_template_directory_uri() . '/images/menu_reviews_icon.png',
+    'menu_icon'           => get_template_directory_uri() . '/assets/img/menu_reviews_icon.png',
     'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
   );
 
@@ -114,7 +114,7 @@ function add_draim_post_type(){
     'has_archive'         => true,
     'hierarchical'        => true,
     'menu_position'       => null,
-    'menu_icon'           => get_template_directory_uri() . '/images/menu_portal_icon.png',
+    'menu_icon'           => get_template_directory_uri() . '/assets/img/menu_portal_icon.png',
     'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'page-attributes' )
   );
 
@@ -152,7 +152,7 @@ function add_draim_post_type(){
     'has_archive'         => true,
     'hierarchical'        => false,
     'menu_position'       => null,
-    'menu_icon'           => get_template_directory_uri() . '/images/menu_portal_news_icon.png',
+    'menu_icon'           => get_template_directory_uri() . '/assets/img/menu_portal_news_icon.png',
     'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'page-attributes' )
   );
 
@@ -190,7 +190,7 @@ function add_draim_post_type(){
     'has_archive'         => true,
     'hierarchical'        => false,
     'menu_position'       => null,
-    'menu_icon'           => get_template_directory_uri() . '/images/menu_webinar_icon.png',
+    'menu_icon'           => get_template_directory_uri() . '/assets/img/menu_webinar_icon.png',
     'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'page-attributes' )
   );
 
@@ -227,7 +227,7 @@ function add_draim_post_type(){
     'has_archive'         => true,
     'hierarchical'        => false,
     'menu_position'       => null,
-    'menu_icon'           => get_template_directory_uri() . '/images/menu_job_icon.png',
+    'menu_icon'           => get_template_directory_uri() . '/assets/img/menu_job_icon.png',
     'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'page-attributes' )
   );
 

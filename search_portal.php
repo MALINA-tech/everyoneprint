@@ -144,6 +144,6 @@ if(is_user_logged_in()){
     </div>
     <?php get_template_part('portal/footer-portal');?>
 <?php }else{ ?>
-    <?php $login_link = get_permalink(2849);?>
+    <?php $login_link = wp_login_url();?>
     <?php header('Location: '.$login_link);?>
 <?php }?>
